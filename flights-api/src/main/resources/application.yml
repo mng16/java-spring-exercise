@@ -1,0 +1,14 @@
+spring:
+  profiles: dev
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_flights
+    username: flightsuser
+    password: FlightsPassword
+name: dev-YAML
+environment: dev
+
