@@ -1,0 +1,4 @@
+com/flights/Application.class
+com/flights/controller/FlightInfoController.class
+com/flights/repository/FlightInfoRepository.class
+com/flights/model/FlightInfo.class
