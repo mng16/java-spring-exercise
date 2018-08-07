@@ -46,6 +46,18 @@ public class FlightInfoController {
 
 
         return new ResponseEntity(flightInfo, HttpStatus.OK);
+    }
 
+    @PutMapping("/updatearrival/{id}")
+    public ResponseEntity updateFlightArrivalTime(@PathVariable Integer id,
+                                                  @RequestParam Integer arrivaltime) {
+
+        FlightInfo flightInfo = flightInfoRepository.findById(id).orElse(null);
+
+        flightInfo.setArrivalTime(arrivaltime);
+
+        flightInfoRepository.save(flightInfo);
+
+        return new ResponseEntity(flightInfo, HttpStatus.OK);
     }
 }
