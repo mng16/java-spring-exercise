@@ -1,0 +1,31 @@
+
+target/
+*.tgz
+
+# STST
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+
+# IDEA artifacts and output dirs
+.idea
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Ignore environment files
+.env
+
+
