@@ -1,0 +1,8 @@
+{
+	"flightNo": "ABC",
+	"departureTime": 1020,
+	"arrivalTime": 1120,
+	"gate": "G",
+	"destination": "NY",
+	"status": "ok"
+}
