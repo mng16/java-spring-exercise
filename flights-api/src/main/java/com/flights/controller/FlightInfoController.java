@@ -60,4 +60,6 @@ public class FlightInfoController {
 
         return new ResponseEntity(flightInfo, HttpStatus.OK);
     }
+
+
 }
