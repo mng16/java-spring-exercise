@@ -28,4 +28,5 @@ nbdist/
 # Ignore environment files
 .env
 
+servlet-context.xml
 
