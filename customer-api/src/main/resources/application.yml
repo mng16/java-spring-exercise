@@ -3,7 +3,7 @@ spring:
   jpa:
     database: MYSQL
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_customers

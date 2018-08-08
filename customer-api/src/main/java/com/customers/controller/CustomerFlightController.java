@@ -15,13 +15,19 @@ public class CustomerFlightController {
     private CustomerFlightRepository customerFlightRepository;
 
     @PostMapping("add")
-    public @ResponseBody String addNewCustomerFlight (@RequestParam Integer flightId,
-                                 @RequestParam Integer customerId) {
+    public @ResponseBody String addNewCustomerFlight (@RequestParam Integer flightid,
+                                 @RequestParam Integer customerid) {
         CustomerFlight customerFlight = new CustomerFlight();
-        customerFlight.setFlightId(flightId);
-        customerFlight.setCustomerId(customerId);
+        customerFlight.setFlightId(flightid);
+        customerFlight.setCustomerId(customerid);
         customerFlightRepository.save(customerFlight);
         return "Saved to customerFlight";
+    }
+
+    @PostMapping("addjson")
+    public ResponseEntity addNewCustomerFlightJson (@RequestBody CustomerFlight customerFlightJson) {
+        customerFlightRepository.save(customerFlightJson);
+        return new ResponseEntity(customerFlightJson, HttpStatus.OK);
     }
 
     @GetMapping("getall")

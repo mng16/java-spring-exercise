@@ -35,7 +35,7 @@ public class CustomerController {
 		return customerRepository.findAll();
 	}
 
-	@PostMapping("/adduser")
+	@PostMapping("/addcustomer")
 	public ResponseEntity addNewUser(@RequestBody Customer customerJson) {
 		customerRepository.save(customerJson);
 		return new ResponseEntity(customerJson, HttpStatus.OK);
